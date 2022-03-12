@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloc_De_Notas", "Bloc_De_Notas\Bloc_De_Notas.csproj", "{02E88E89-6990-4E14-8A67-7F571A1F7E45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloc_De_Notas.Domain", "Bloc_De_Notas.Domain\Bloc_De_Notas.Domain.csproj", "{9EC4D2E8-6230-4498-BD65-6532CFD0D4E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bloc_De_Notas.Domain", "Bloc_De_Notas.Domain\Bloc_De_Notas.Domain.csproj", "{9EC4D2E8-6230-4498-BD65-6532CFD0D4E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloc_De_Notas.Infraestructure", "Bloc_De_Notas.Infraestructure\Bloc_De_Notas.Infraestructure.csproj", "{0CF6A615-12DB-4497-9C75-13AED4FF6389}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bloc_De_Notas.Infraestructure", "Bloc_De_Notas.Infraestructure\Bloc_De_Notas.Infraestructure.csproj", "{0CF6A615-12DB-4497-9C75-13AED4FF6389}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloc_De_Notas.Service", "Bloc_De_Notas.Service\Bloc_De_Notas.Service.csproj", "{DDEC8626-F0E7-4DE7-B482-C27893997019}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloc_De_Notas.AppCore", "Bloc_De_Notas.AppCore\Bloc_De_Notas.AppCore.csproj", "{75F789E5-1A0C-496D-9DF0-7B70A412E671}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{0CF6A615-12DB-4497-9C75-13AED4FF6389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF6A615-12DB-4497-9C75-13AED4FF6389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF6A615-12DB-4497-9C75-13AED4FF6389}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDEC8626-F0E7-4DE7-B482-C27893997019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDEC8626-F0E7-4DE7-B482-C27893997019}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDEC8626-F0E7-4DE7-B482-C27893997019}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDEC8626-F0E7-4DE7-B482-C27893997019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F789E5-1A0C-496D-9DF0-7B70A412E671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F789E5-1A0C-496D-9DF0-7B70A412E671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F789E5-1A0C-496D-9DF0-7B70A412E671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F789E5-1A0C-496D-9DF0-7B70A412E671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

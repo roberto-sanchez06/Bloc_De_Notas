@@ -1,0 +1,11 @@
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.exe.config
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.exe
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.pdb
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.AssemblyReference.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.SuggestedBindingRedirects.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.Notepad.resources
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.Properties.Resources.resources
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.GenerateResource.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.CoreCompileInputs.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.exe
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.pdb
