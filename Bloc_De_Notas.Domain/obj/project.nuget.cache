@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gjAj/omIM4wNCvO5YtTSXLIWe+BGntLuA99jpCopmlr3t7BlNv/GWe1mM1tm+63Ctdvnq5zJ1w5yXSoL3CrmMg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\larry\\source\\repos\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\larry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\larry\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
