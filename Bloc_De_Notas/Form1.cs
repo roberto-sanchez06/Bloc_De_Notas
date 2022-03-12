@@ -48,5 +48,24 @@ namespace Bloc_De_Notas
             DirectoryInfo directory = new DirectoryInfo(path);
             treeView1.Nodes.Add(CrearArbol(directory));
         }
+
+        private void treeView1_NodeMouseHover(object sender, TreeNodeMouseHoverEventArgs e)
+        {
+
+            treeView1.SelectedNode = e.Node;
+        }
+
+        private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+
+        }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                contextMenuStrip1.Show(treeView1, e.X, e.Y);
+            }
+        }
     }
 }
