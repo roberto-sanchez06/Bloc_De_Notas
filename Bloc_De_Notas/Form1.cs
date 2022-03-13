@@ -25,8 +25,6 @@ namespace Bloc_De_Notas
         }
         private TreeNode CrearArbol(DirectoryInfo directory)
         {
-            //MessageBox.Show("Metodo crear Arbol");
-            //MessageBox.Show(directory.FullName);
 
             TreeNode treeNode = new TreeNode { Text = directory.Name, Tag = directory.FullName };
             foreach (DirectoryInfo di in directory.GetDirectories())
@@ -35,10 +33,6 @@ namespace Bloc_De_Notas
             }
             foreach (var files in directory.GetFiles())
             {
-                //MessageBox.Show("Dentro del foreach de Files");
-                //MessageBox.Show(directory.FullName);
-                //MessageBox.Show(files.Name);
-                //aqui antes estaba directory.name
                 treeNode.Nodes.Add(new TreeNode { Text = files.Name, Tag = directory.FullName+"\\"+files.Name});
             }
             return treeNode;

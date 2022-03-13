@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
       "projectName": "Bloc_De_Notas.Domain",
-      "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
+      "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
       "packagesPath": "C:\\Users\\sanro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.Domain\\obj\\",
+      "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sanro\\AppData\\Roaming\\NuGet\\NuGet.Config",

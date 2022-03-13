@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kdiwUHqKXWn3UEHJvxXpotMFZn6aJ9A6vw3fn7zBuxUeRvyFOw/t9NDJtbwWBHLDtbyVEVomZpKFK/frxyG5hA==",
+  "dgSpecHash": "9PjuD+shv3AZzMv4XhxdTaIxsjNudQUcFLvEFCUDqFE7eq1wgwuynU18LUMAUz3clh1GDL5IF7/QK8mWbPYCvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+  "projectFilePath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sanro\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\sanro\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

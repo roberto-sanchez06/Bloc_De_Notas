@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {}
+    "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {
+    "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+        "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
         "projectName": "Bloc_De_Notas.AppCore",
-        "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+        "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
         "packagesPath": "C:\\Users\\sanro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Proyectos\\Carpeta\\BlocDeNotas\\Bloc_De_Notas.AppCore\\obj\\",
+        "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sanro\\AppData\\Roaming\\NuGet\\NuGet.Config",
