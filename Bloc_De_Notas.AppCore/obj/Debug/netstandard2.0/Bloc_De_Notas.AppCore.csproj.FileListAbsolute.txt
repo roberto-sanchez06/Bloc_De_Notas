@@ -1,0 +1,10 @@
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\bin\Debug\netstandard2.0\Bloc_De_Notas.AppCore.deps.json
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\bin\Debug\netstandard2.0\Bloc_De_Notas.AppCore.dll
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\bin\Debug\netstandard2.0\Bloc_De_Notas.AppCore.pdb
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.csproj.AssemblyReference.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.AssemblyInfoInputs.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.AssemblyInfo.cs
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.csproj.CoreCompileInputs.cache
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.dll
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas.AppCore\obj\Debug\netstandard2.0\Bloc_De_Notas.AppCore.pdb

@@ -81,7 +81,7 @@ namespace Bloc_De_Notas
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
@@ -90,32 +90,33 @@ namespace Bloc_De_Notas
             this.archivoToolStripMenuItem,
             this.carpetaToolStripMenuItem});
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.archivoToolStripMenuItem.Text = "Archivo";
+            this.archivoToolStripMenuItem.Click += new System.EventHandler(this.archivoToolStripMenuItem_Click);
             // 
             // carpetaToolStripMenuItem
             // 
             this.carpetaToolStripMenuItem.Name = "carpetaToolStripMenuItem";
-            this.carpetaToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.carpetaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.carpetaToolStripMenuItem.Text = "Carpeta";
             this.carpetaToolStripMenuItem.Click += new System.EventHandler(this.carpetaToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
@@ -167,7 +168,7 @@ namespace Bloc_De_Notas
             this.nuevoToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // nuevoToolStripMenuItem
             // 
@@ -175,26 +176,29 @@ namespace Bloc_De_Notas
             this.carpetaToolStripMenuItem1,
             this.archivoDeTextoToolStripMenuItem});
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             // 
             // carpetaToolStripMenuItem1
             // 
             this.carpetaToolStripMenuItem1.Name = "carpetaToolStripMenuItem1";
-            this.carpetaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.carpetaToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.carpetaToolStripMenuItem1.Text = "Carpeta";
+            this.carpetaToolStripMenuItem1.Click += new System.EventHandler(this.carpetaToolStripMenuItem1_Click);
             // 
             // archivoDeTextoToolStripMenuItem
             // 
             this.archivoDeTextoToolStripMenuItem.Name = "archivoDeTextoToolStripMenuItem";
             this.archivoDeTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.archivoDeTextoToolStripMenuItem.Text = "Archivo de texto";
+            this.archivoDeTextoToolStripMenuItem.Click += new System.EventHandler(this.archivoDeTextoToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // Notepad
             // 

@@ -9,3 +9,7 @@ C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\o
 C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.CoreCompileInputs.cache
 C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.exe
 C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.pdb
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.AppCore.dll
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.AppCore.pdb
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.FrmNombre.resources
+C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.CopyComplete
