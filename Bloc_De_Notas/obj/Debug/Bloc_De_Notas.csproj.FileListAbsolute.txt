@@ -13,3 +13,17 @@ C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\b
 C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.AppCore.pdb
 C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.FrmNombre.resources
 C:\Users\sanro\OneDrive\Escritorio\Proyectos\Carpeta\BlocDeNotas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.CopyComplete
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.exe.config
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.exe
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.pdb
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.AppCore.dll
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\bin\Debug\Bloc_De_Notas.AppCore.pdb
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.AssemblyReference.cache
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.Notepad.resources
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.FrmNombre.resources
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.Properties.Resources.resources
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.GenerateResource.cache
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.CoreCompileInputs.cache
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.csproj.CopyComplete
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.exe
+C:\Users\larry\Desktop\primera-tarea\Bloc_De_Notas\Bloc_De_Notas\obj\Debug\Bloc_De_Notas.pdb

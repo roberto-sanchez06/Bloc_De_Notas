@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {}
+    "C:\\Users\\larry\\Desktop\\primera-tarea\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {
+    "C:\\Users\\larry\\Desktop\\primera-tarea\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+        "projectUniqueName": "C:\\Users\\larry\\Desktop\\primera-tarea\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
         "projectName": "Bloc_De_Notas.AppCore",
-        "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
-        "packagesPath": "C:\\Users\\sanro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\Repos\\BlocNotasMio\\Bloc_De_Notas.AppCore\\obj\\",
+        "projectPath": "C:\\Users\\larry\\Desktop\\primera-tarea\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+        "packagesPath": "C:\\Users\\larry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\larry\\Desktop\\primera-tarea\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sanro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\larry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -57,7 +61,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
