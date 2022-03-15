@@ -33,14 +33,17 @@ namespace Bloc_De_Notas.Infraestructure
             }
         }
 
-        public FileStream Create(string path, string name)
+        public FileInfo Create(string path, string name)
         {
             string rutaCompleta = path + "\\" + name + ".txt";
             if (File.Exists(rutaCompleta))
             {
                 throw new ArgumentException("El archivo ya existe");
             }
-            return File.Create(rutaCompleta);
+            Stream s =File.Create(rutaCompleta);
+            FileInfo fi = new FileInfo(rutaCompleta);
+            s.Close();
+            return fi;
         }
 
         public void Delete(string path)

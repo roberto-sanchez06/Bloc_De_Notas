@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Bloc_De_Notas.AppCore.Service
 {
-    public class FileService : BaseService<FileStream>, IFileService
+    public class FileService : BaseService<FileInfo>, IFileService
     {
         private IFileRepository fileRepository;
 

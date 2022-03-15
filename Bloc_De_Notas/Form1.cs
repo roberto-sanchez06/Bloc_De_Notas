@@ -54,9 +54,9 @@ namespace Bloc_De_Notas
                 DirectoryInfo directory = new DirectoryInfo(path);
                 treeView1.Nodes.Add(CrearArbol(directory));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -76,9 +76,9 @@ namespace Bloc_De_Notas
                     richTextBox1.Text=fileService.AbrirArchivo(ruta);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -151,10 +151,10 @@ namespace Bloc_De_Notas
                 FrmNombre frm = new FrmNombre();
                 frm.ShowDialog();
                 string nombre = frm.Nombre;
-                FileStream fstream = fileService.Create(treeView1.SelectedNode.Tag.ToString(), nombre);
-                ruta = fstream.Name;
+                FileInfo  fileInfo = fileService.Create(treeView1.SelectedNode.Tag.ToString(), nombre);
+                //MessageBox.Show(fileInfo.FullName);
+                ruta = fileInfo.FullName;
                 treeView1.SelectedNode.Nodes.Add(new TreeNode { Text = nombre + ".txt", Tag = ruta });
-                fstream.Close();
             }
             catch (Exception ex)
             {
@@ -193,6 +193,7 @@ namespace Bloc_De_Notas
                 }
                 else
                 {
+                    //
                     Stream s = File.Create(path);
                     FileInfo file = new FileInfo(path);
                     treeView1.Nodes.Add(CrearArbol(file));

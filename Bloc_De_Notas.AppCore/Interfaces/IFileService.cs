@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Bloc_De_Notas.AppCore.Interfaces
 {
-    public interface IFileService : IService<FileStream>
+    public interface IFileService : IService<FileInfo>
     {
         string AbrirArchivo(string path);
         //este es el de sobreescribir 
