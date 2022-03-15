@@ -8,12 +8,29 @@ namespace Bloc_De_Notas.Infraestructure
 {
     public class FIleRepository : IFileRepository
     {
+        StreamReader reader;
+        StreamWriter writer;
         public string AbrirArchivo(string path)
         {
-            StreamReader streamReader = new StreamReader(path);
-            string mensaje = streamReader.ReadToEnd();
-            streamReader.Close();
-            return mensaje;
+            //StreamReader streamReader = new StreamReader(path);
+            //string mensaje = streamReader.ReadToEnd();
+            //streamReader.Close();
+            //return mensaje;
+            string mensaje = string.Empty;
+            try
+            {
+                using (FileStream fileStream = new FileStream(path, FileMode.Open, FileAccess.Read))
+                {
+                    reader = new StreamReader(fileStream);
+                    mensaje = reader.ReadToEnd();
+                    reader.Close();
+                }
+                return mensaje;
+            }
+            catch (IOException)
+            {
+                throw;
+            }
         }
 
         public FileStream Create(string path, string name)
@@ -37,7 +54,21 @@ namespace Bloc_De_Notas.Infraestructure
 
         public void GuardarArchivo(string ruta, string mensaje)
         {
-            File.WriteAllText(ruta, mensaje);
+            //File.WriteAllText(ruta, mensaje);
+            try
+            {
+                using (FileStream fileStream = new FileStream(ruta, FileMode.Truncate, FileAccess.Write))
+                {
+                    writer = new StreamWriter(fileStream);
+                    writer.Write(mensaje);
+                    writer.Close();
+                }
+
+            }
+            catch (IOException)
+            {
+                return;
+            }
         }
     }
 }

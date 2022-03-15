@@ -50,7 +50,6 @@ namespace Bloc_De_Notas
                 {
                     path = folderBrowserDialog.SelectedPath;
                 }
-                //TODO: Se puede dejar o quitar
                 //treeView1.Nodes.Clear();
                 DirectoryInfo directory = new DirectoryInfo(path);
                 treeView1.Nodes.Add(CrearArbol(directory));
@@ -88,12 +87,12 @@ namespace Bloc_De_Notas
             if (e.Button == MouseButtons.Right)
             {
                 contextMenuStrip1.Show(treeView1, e.X, e.Y);
+                //
+                if (treeView1.SelectedNode != null && Path.HasExtension(treeView1.SelectedNode.Tag.ToString()))
+                {
+                    nuevoToolStripMenuItem.Enabled = false;
+                }
             }
-            if (treeView1.SelectedNode!= null && Path.HasExtension(treeView1.SelectedNode.Tag.ToString()))
-            {
-                nuevoToolStripMenuItem.Enabled = false;
-            }
-       
         }
 
         private void carpetaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -183,8 +182,9 @@ namespace Bloc_De_Notas
             frm.ShowDialog();
             string nombre = frm.Nombre+".txt";
             string path = Application.StartupPath + @"\" + nombre;
-            
-            
+
+            //
+            ruta = path;
             try
             {
                 if (File.Exists(path))
@@ -249,11 +249,6 @@ namespace Bloc_De_Notas
                 escribir.Close();
             }
             ruta = guardar.FileName;
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
         }
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
         {

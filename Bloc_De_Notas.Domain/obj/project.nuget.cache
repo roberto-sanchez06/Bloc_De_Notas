@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nMHbkhwyfehUJwgzKVAGEHNrgVsaDkxu4GDEJ2t4ct1O3nJ/5G/LHLYsZd0pU53I8B2oGHa2h0LNqxYGy/ubWA==",
+  "dgSpecHash": "ZTsVN9x2dmBBMYeyAJto+xlgMBKUz2KBSndaaJdSoFNeOo1BS4ReSitVIt9GUr8Jd9CRTsaO7zkgIxfxi8C+Pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
+  "projectFilePath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\clonacion 2 a las 12 de la noche\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\larry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\larry\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\sanro\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\sanro\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
