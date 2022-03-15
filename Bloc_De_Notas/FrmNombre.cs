@@ -20,6 +20,11 @@ namespace Bloc_De_Notas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == String.Empty)
+            {
+                MessageBox.Show("No se aceptan cadenas vacias", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Nombre = textBox1.Text;
             Dispose();
         }

@@ -1,22 +1,24 @@
-﻿using System;
+﻿using Bloc_De_Notas.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Bloc_De_Notas.AppCore.Processes
+namespace Bloc_De_Notas.Infraestructure
 {
-    public static class DirectoryProcesses
+    public class DirectoryRepository : IDirectoryRepository
     {
-        public static DirectoryInfo Create(string path, string name)
+        public DirectoryInfo Create(string ruta, string nombre)
         {
-            string rutaCompleta = path + "\\" + name;
+            string rutaCompleta = ruta + "\\" + nombre;
             if (Directory.Exists(rutaCompleta))
             {
                 throw new ArgumentException("La carpeta ya existe");
             }
             return Directory.CreateDirectory(rutaCompleta);
         }
-        public static void Delete(string path)
+
+        public void Delete(string path)
         {
             if (!Directory.Exists(path))
             {

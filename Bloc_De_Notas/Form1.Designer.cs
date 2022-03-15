@@ -33,12 +33,17 @@ namespace Bloc_De_Notas
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.archivoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.carpetaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carpetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -47,8 +52,6 @@ namespace Bloc_De_Notas
             this.carpetaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoDeTextoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.archivoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.carpetaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -74,11 +77,11 @@ namespace Bloc_De_Notas
             this.newToolStripMenuItem,
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
+            this.actualizarToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
-            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
@@ -86,9 +89,22 @@ namespace Bloc_De_Notas
             this.archivoToolStripMenuItem1,
             this.carpetaToolStripMenuItem2});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.newToolStripMenuItem.Text = "New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            // 
+            // archivoToolStripMenuItem1
+            // 
+            this.archivoToolStripMenuItem1.Name = "archivoToolStripMenuItem1";
+            this.archivoToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
+            this.archivoToolStripMenuItem1.Text = "File";
+            this.archivoToolStripMenuItem1.Click += new System.EventHandler(this.archivoToolStripMenuItem1_Click);
+            // 
+            // carpetaToolStripMenuItem2
+            // 
+            this.carpetaToolStripMenuItem2.Name = "carpetaToolStripMenuItem2";
+            this.carpetaToolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
+            this.carpetaToolStripMenuItem2.Text = "Folder";
+            this.carpetaToolStripMenuItem2.Click += new System.EventHandler(this.carpetaToolStripMenuItem2_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -96,43 +112,66 @@ namespace Bloc_De_Notas
             this.archivoToolStripMenuItem,
             this.carpetaToolStripMenuItem});
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.archivoToolStripMenuItem.Text = "Archivo";
             this.archivoToolStripMenuItem.Click += new System.EventHandler(this.archivoToolStripMenuItem_Click);
             // 
             // carpetaToolStripMenuItem
             // 
             this.carpetaToolStripMenuItem.Name = "carpetaToolStripMenuItem";
-            this.carpetaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carpetaToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.carpetaToolStripMenuItem.Text = "Carpeta";
             this.carpetaToolStripMenuItem.Click += new System.EventHandler(this.carpetaToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Text = "Save As";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // actualizarToolStripMenuItem
+            // 
+            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
+            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.actualizarToolStripMenuItem.Text = "Save";
+            this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.actualizarToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
             // editToolStripMenuItem
             // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorToolStripMenuItem,
+            this.fuenteToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
+            // 
+            // fuenteToolStripMenuItem
+            // 
+            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
+            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.fuenteToolStripMenuItem.Text = "Font";
+            this.fuenteToolStripMenuItem.Click += new System.EventHandler(this.fuenteToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -177,7 +216,7 @@ namespace Bloc_De_Notas
             this.nuevoToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(108, 48);
             // 
             // nuevoToolStripMenuItem
             // 
@@ -185,43 +224,29 @@ namespace Bloc_De_Notas
             this.carpetaToolStripMenuItem1,
             this.archivoDeTextoToolStripMenuItem});
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.nuevoToolStripMenuItem.Text = "New";
             // 
             // carpetaToolStripMenuItem1
             // 
             this.carpetaToolStripMenuItem1.Name = "carpetaToolStripMenuItem1";
-            this.carpetaToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
-            this.carpetaToolStripMenuItem1.Text = "Carpeta";
+            this.carpetaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.carpetaToolStripMenuItem1.Text = "Folder";
             this.carpetaToolStripMenuItem1.Click += new System.EventHandler(this.carpetaToolStripMenuItem1_Click);
             // 
             // archivoDeTextoToolStripMenuItem
             // 
             this.archivoDeTextoToolStripMenuItem.Name = "archivoDeTextoToolStripMenuItem";
-            this.archivoDeTextoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.archivoDeTextoToolStripMenuItem.Text = "Archivo de texto";
+            this.archivoDeTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.archivoDeTextoToolStripMenuItem.Text = "Text file";
             this.archivoDeTextoToolStripMenuItem.Click += new System.EventHandler(this.archivoDeTextoToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Text = "Delete";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
-            // 
-            // archivoToolStripMenuItem1
-            // 
-            this.archivoToolStripMenuItem1.Name = "archivoToolStripMenuItem1";
-            this.archivoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.archivoToolStripMenuItem1.Text = "Archivo";
-            this.archivoToolStripMenuItem1.Click += new System.EventHandler(this.archivoToolStripMenuItem1_Click);
-            // 
-            // carpetaToolStripMenuItem2
-            // 
-            this.carpetaToolStripMenuItem2.Name = "carpetaToolStripMenuItem2";
-            this.carpetaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.carpetaToolStripMenuItem2.Text = "Carpeta";
-            this.carpetaToolStripMenuItem2.Click += new System.EventHandler(this.carpetaToolStripMenuItem2_Click);
             // 
             // Notepad
             // 
@@ -255,7 +280,6 @@ namespace Bloc_De_Notas
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carpetaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.RichTextBox richTextBox1;
@@ -266,6 +290,10 @@ namespace Bloc_De_Notas
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem carpetaToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

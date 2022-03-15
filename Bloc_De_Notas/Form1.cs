@@ -1,4 +1,5 @@
-﻿using Bloc_De_Notas.AppCore.Processes;
+﻿using Bloc_De_Notas.AppCore.Interfaces;
+using Bloc_De_Notas.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,19 +15,19 @@ namespace Bloc_De_Notas
 {
     public partial class Notepad : Form
     {
-        
-        public Notepad()
+        private IDirectoryService directoryService;
+        private IFileService fileService;
+        private string ruta;
+
+        public Notepad(IDirectoryService directoryService, IFileService fileService)
         {
+            this.directoryService = directoryService;
+            this.fileService = fileService;
             InitializeComponent();
         }
 
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
         private TreeNode CrearArbol(DirectoryInfo directory)
         {
-
             TreeNode treeNode = new TreeNode { Text = directory.Name, Tag = directory.FullName };
             foreach (DirectoryInfo di in directory.GetDirectories())
             {
@@ -49,7 +50,8 @@ namespace Bloc_De_Notas
                 {
                     path = folderBrowserDialog.SelectedPath;
                 }
-                treeView1.Nodes.Clear();
+                //TODO: Se puede dejar o quitar
+                //treeView1.Nodes.Clear();
                 DirectoryInfo directory = new DirectoryInfo(path);
                 treeView1.Nodes.Add(CrearArbol(directory));
             }
@@ -61,21 +63,23 @@ namespace Bloc_De_Notas
 
         private void treeView1_NodeMouseHover(object sender, TreeNodeMouseHoverEventArgs e)
         {
-
             treeView1.SelectedNode = e.Node;
         }
 
         private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            string path = treeView1.SelectedNode.Tag.ToString();
-            MessageBox.Show(path);
-            FileInfo fileInfo = new FileInfo(path);
-            if (Path.HasExtension(path))
+            try
             {
-                StreamReader streamReader = new StreamReader(path);
-                richTextBox1.Text = streamReader.ReadToEnd();
-                //path = openFileDialog.FileName;
-                streamReader.Close();
+                string path = treeView1.SelectedNode.Tag.ToString();
+                if (Path.HasExtension(path))
+                {
+                    ruta = path;
+                    richTextBox1.Text=fileService.AbrirArchivo(ruta);
+                }
+            }
+            catch (Exception)
+            {
+
             }
         }
 
@@ -85,7 +89,7 @@ namespace Bloc_De_Notas
             {
                 contextMenuStrip1.Show(treeView1, e.X, e.Y);
             }
-            if (Path.HasExtension(treeView1.SelectedNode.Tag.ToString()))
+            if (treeView1.SelectedNode!= null && Path.HasExtension(treeView1.SelectedNode.Tag.ToString()))
             {
                 nuevoToolStripMenuItem.Enabled = false;
             }
@@ -99,9 +103,8 @@ namespace Bloc_De_Notas
                 FrmNombre frm = new FrmNombre();
                 frm.ShowDialog();
                 string nombre = frm.Nombre;
-                DirectoryInfo di = DirectoryProcesses.Create(treeView1.SelectedNode.Tag.ToString(), nombre);
+                DirectoryInfo di = directoryService.Create(treeView1.SelectedNode.Tag.ToString(), nombre);
                 treeView1.SelectedNode.Nodes.Add(new TreeNode { Text = nombre, Tag = di.FullName });
-                MessageBox.Show(di.FullName);
             }
             catch (Exception ex)
             {
@@ -111,7 +114,6 @@ namespace Bloc_De_Notas
 
         private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 var fileContent = string.Empty;
@@ -123,15 +125,16 @@ namespace Bloc_De_Notas
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                   
                     filePath = openFileDialog.FileName;
+
                     FileInfo file1 = new FileInfo(filePath);
                     treeView1.Nodes.Add(CrearArbol(file1));
 
-
-
+                    richTextBox1.Text = fileService.AbrirArchivo(filePath);
                 }
+                ruta = openFileDialog.FileName;
             }
+
         }
 
         private TreeNode CrearArbol(FileInfo file1)
@@ -144,16 +147,14 @@ namespace Bloc_De_Notas
 
         private void archivoDeTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             try
             {
                 FrmNombre frm = new FrmNombre();
                 frm.ShowDialog();
                 string nombre = frm.Nombre;
-                FileStream fstream = FileProcesses.Create(treeView1.SelectedNode.Tag.ToString(), nombre);
-                string ruta = fstream.Name;
-                treeView1.SelectedNode.Nodes.Add(new TreeNode { Text = nombre+".txt", Tag = ruta});
-                MessageBox.Show(ruta);
+                FileStream fstream = fileService.Create(treeView1.SelectedNode.Tag.ToString(), nombre);
+                ruta = fstream.Name;
+                treeView1.SelectedNode.Nodes.Add(new TreeNode { Text = nombre + ".txt", Tag = ruta });
                 fstream.Close();
             }
             catch (Exception ex)
@@ -165,54 +166,46 @@ namespace Bloc_De_Notas
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string ruta = treeView1.SelectedNode.Tag.ToString();
-            MessageBox.Show(ruta);
             if (Path.HasExtension(ruta))
             {
-                FileProcesses.Delete(ruta);
+                fileService.Delete(ruta);
             }
             else
             {
-                DirectoryProcesses.Delete(ruta);
+                directoryService.Delete(ruta);
             }
             treeView1.SelectedNode.Remove();
-        }
-
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void archivoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FrmNombre frm = new FrmNombre();
             frm.ShowDialog();
-            string nombre = frm.Nombre;
-            string path = Application.StartupPath + @"\" + nombre;
-            try
+            string nombre = frm.Nombre+".txt";
+            //string path = Application.StartupPath + @"\" + nombre;
+            if (treeView1.SelectedNode != null)
             {
-                if (File.Exists(path))
+                string path = treeView1.SelectedNode.Tag.ToString() + @"\" + nombre;
+                try
                 {
-                    MessageBox.Show("el archivo existe");
+                    if (File.Exists(path))
+                    {
+                        MessageBox.Show("el archivo existe");
+                    }
+                    else
+                    {
+                        Stream s =File.Create(path);
+                        FileInfo file = new FileInfo(path);
+                        treeView1.SelectedNode.Nodes.Add(CrearArbol(file));
+                        s.Close();
+                    }
+                }
+                catch
+                {
 
                 }
-                else
-                {
-                    File.Create(path);
-                    FileInfo file = new FileInfo(path);
-                    treeView1.Nodes.Add(CrearArbol(file));
-                }
             }
-            catch
-            {
-
-            }
-
-
+            
         }
 
         private void carpetaToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -220,25 +213,28 @@ namespace Bloc_De_Notas
             FrmNombre frm = new FrmNombre();
             frm.ShowDialog();
             string nombre = frm.Nombre;
-            string path = Application.StartupPath + @"\" + nombre;
-
-            try
+            //string path = Application.StartupPath + @"\" + nombre;
+            if(treeView1.SelectedNode != null)
             {
-                if (Directory.Exists(path))
+                string path = treeView1.SelectedNode.Tag.ToString();
+                try
                 {
-                    MessageBox.Show("la carpeta existe");
+                    if (Directory.Exists(path))
+                    {
+                        MessageBox.Show("la carpeta existe");
+
+                    }
+                    else
+                    {
+                        Directory.CreateDirectory(path);
+                        DirectoryInfo directory = new DirectoryInfo(path);
+                        treeView1.SelectedNode.Nodes.Add(CrearArbol(directory));
+                    }
+                }
+                catch
+                {
 
                 }
-                else
-                {
-                    Directory.CreateDirectory(path);
-                    DirectoryInfo directory = new DirectoryInfo(path);
-                    treeView1.Nodes.Add(CrearArbol(directory));
-                }
-            }
-            catch
-            {
-
             }
         }
 
@@ -257,9 +253,36 @@ namespace Bloc_De_Notas
                 }
                 escribir.Close();
             }
+            ruta = guardar.FileName;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.ForeColor=colorDialog.Color;
+            }
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fileService.GuardarArchivo(ruta, richTextBox1.Text);
+        }
+        private void fuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.Font = fontDialog.Font;
+            }
+        }
+
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Close();
         }
