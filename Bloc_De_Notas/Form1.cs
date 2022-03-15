@@ -182,30 +182,28 @@ namespace Bloc_De_Notas
             FrmNombre frm = new FrmNombre();
             frm.ShowDialog();
             string nombre = frm.Nombre+".txt";
-            //string path = Application.StartupPath + @"\" + nombre;
-            if (treeView1.SelectedNode != null)
+            string path = Application.StartupPath + @"\" + nombre;
+            
+            
+            try
             {
-                string path = treeView1.SelectedNode.Tag.ToString() + @"\" + nombre;
-                try
+                if (File.Exists(path))
                 {
-                    if (File.Exists(path))
-                    {
-                        MessageBox.Show("el archivo existe");
-                    }
-                    else
-                    {
-                        Stream s =File.Create(path);
-                        FileInfo file = new FileInfo(path);
-                        treeView1.SelectedNode.Nodes.Add(CrearArbol(file));
-                        s.Close();
-                    }
+                    MessageBox.Show("el archivo existe");
                 }
-                catch
+                else
                 {
-
+                    Stream s = File.Create(path);
+                    FileInfo file = new FileInfo(path);
+                    treeView1.Nodes.Add(CrearArbol(file));
+                    s.Close();
                 }
             }
-            
+            catch
+            {
+
+            }
+
         }
 
         private void carpetaToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -213,28 +211,25 @@ namespace Bloc_De_Notas
             FrmNombre frm = new FrmNombre();
             frm.ShowDialog();
             string nombre = frm.Nombre;
-            //string path = Application.StartupPath + @"\" + nombre;
-            if(treeView1.SelectedNode != null)
+            string path = Application.StartupPath + @"\" + nombre;
+            
+            try
             {
-                string path = treeView1.SelectedNode.Tag.ToString();
-                try
+                if (Directory.Exists(path))
                 {
-                    if (Directory.Exists(path))
-                    {
-                        MessageBox.Show("la carpeta existe");
-
-                    }
-                    else
-                    {
-                        Directory.CreateDirectory(path);
-                        DirectoryInfo directory = new DirectoryInfo(path);
-                        treeView1.SelectedNode.Nodes.Add(CrearArbol(directory));
-                    }
-                }
-                catch
-                {
+                    MessageBox.Show("la carpeta existe");
 
                 }
+                else
+                {
+                    Directory.CreateDirectory(path);
+                    DirectoryInfo directory = new DirectoryInfo(path);
+                    treeView1.Nodes.Add(CrearArbol(directory));
+                }
+            }
+            catch
+            {
+
             }
         }
 

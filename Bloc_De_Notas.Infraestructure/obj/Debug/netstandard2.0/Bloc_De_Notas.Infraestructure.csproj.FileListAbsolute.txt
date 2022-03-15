@@ -11,3 +11,16 @@ C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Infra
 C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.csproj.CopyComplete
 C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.dll
 C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.pdb
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\bin\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.deps.json
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\bin\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.dll
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\bin\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.pdb
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\bin\Debug\netstandard2.0\Bloc_De_Notas.Domain.dll
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\bin\Debug\netstandard2.0\Bloc_De_Notas.Domain.pdb
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.AssemblyInfo.cs
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.csproj.CopyComplete
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.dll
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Infraestructure\obj\Debug\netstandard2.0\Bloc_De_Notas.Infraestructure.pdb

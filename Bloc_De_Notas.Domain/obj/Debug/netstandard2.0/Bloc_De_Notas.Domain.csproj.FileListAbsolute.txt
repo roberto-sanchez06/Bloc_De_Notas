@@ -8,3 +8,13 @@ C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Domai
 C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.csproj.CoreCompileInputs.cache
 C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.dll
 C:\Users\sanro\OneDrive\Escritorio\clonaciones\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.pdb
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\bin\Debug\netstandard2.0\Bloc_De_Notas.Domain.deps.json
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\bin\Debug\netstandard2.0\Bloc_De_Notas.Domain.dll
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\bin\Debug\netstandard2.0\Bloc_De_Notas.Domain.pdb
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.csproj.AssemblyReference.cache
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.AssemblyInfoInputs.cache
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.AssemblyInfo.cs
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.dll
+C:\Users\larry\Desktop\tarea1-fin\Bloc_De_Notas\Bloc_De_Notas.Domain\obj\Debug\netstandard2.0\Bloc_De_Notas.Domain.pdb

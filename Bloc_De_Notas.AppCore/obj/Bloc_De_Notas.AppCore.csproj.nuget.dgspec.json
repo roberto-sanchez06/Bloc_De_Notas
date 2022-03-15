@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {}
+    "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {
+    "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+        "projectUniqueName": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
         "projectName": "Bloc_De_Notas.AppCore",
-        "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
-        "packagesPath": "C:\\Users\\sanro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\obj\\",
+        "projectPath": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\Bloc_De_Notas.AppCore.csproj",
+        "packagesPath": "C:\\Users\\larry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.AppCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sanro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\larry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -28,8 +32,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj": {
-                "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj"
+              "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj": {
+                "projectPath": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj"
               }
             }
           }
@@ -65,22 +69,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj": {
+    "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
         "projectName": "Bloc_De_Notas.Domain",
-        "projectPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
-        "packagesPath": "C:\\Users\\sanro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sanro\\OneDrive\\Escritorio\\clonaciones\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\obj\\",
+        "projectPath": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\Bloc_De_Notas.Domain.csproj",
+        "packagesPath": "C:\\Users\\larry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\larry\\Desktop\\tarea1-fin\\Bloc_De_Notas\\Bloc_De_Notas.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sanro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\larry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -122,7 +130,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
